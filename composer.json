@@ -1,6 +1,6 @@
 {
-    "name": "magento/zendframework1",
-    "description": "Magento Zend Framework 1",
+    "name": "cbichis/php-google-cloud-print",
+    "description": "Zend Framework 1 with fixes",
     "type": "library",
     "keywords": [
         "framework",
@@ -9,7 +9,7 @@
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.2.11"
+        "php": ">=7.2"
     },
     "autoload": {
         "psr-0": {
