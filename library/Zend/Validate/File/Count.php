@@ -254,7 +254,12 @@ class Zend_Validate_File_Count extends Zend_Validate_Abstract
             $this->addFile($value);
         }
 
-        $this->_count = count($this->_files);
+        if(empty($this->_files)){
+            $this_count = 0;
+        } else {
+            $this->_count = count($this->_files);
+        }
+        
         if (($this->_max !== null) && ($this->_count > $this->_max)) {
             return $this->_throw($file, self::TOO_MANY);
         }
