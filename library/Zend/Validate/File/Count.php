@@ -255,7 +255,7 @@ class Zend_Validate_File_Count extends Zend_Validate_Abstract
         }
 
         if(empty($this->_files)){
-            $this_count = 0;
+            $this->_count = 0;
         } else {
             $this->_count = count($this->_files);
         }
