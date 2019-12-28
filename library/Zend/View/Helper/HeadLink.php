@@ -450,7 +450,9 @@ class Zend_View_Helper_HeadLink extends Zend_View_Helper_Placeholder_Container_S
             if(isset($extras['media']) && is_array($extras['media'])) {
                 $extras['media'] = implode(',', $extras['media']);
             }
-        }
+        } else {
+        	$extras = [];
+		}
 
         $href  = (string) $href;
         $type  = (string) $type;
